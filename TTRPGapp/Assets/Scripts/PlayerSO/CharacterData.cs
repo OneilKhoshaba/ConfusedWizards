@@ -24,4 +24,5 @@ public class CharacterData : ScriptableObject
 
     [TextArea(1, 100)]
     public string characterDes;
+    public Sprite characterImage;
 }
