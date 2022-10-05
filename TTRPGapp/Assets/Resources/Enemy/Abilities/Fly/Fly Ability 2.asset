@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d89d072b44e2c6143a6ffc183e89d879, type: 3}
+  m_Name: Fly Ability 2
+  m_EditorClassIdentifier: 
+  name: "\uF0A7Dive Bomb "
+  abilityDes: "Make an attack. If this attack deals damage to a player, that player
+    must make another resistance roll.\r\n\u2022\tSucceeding & Advantage \u2013 no
+    effect.\r\n\u2022\tNeutral \u2013 An item on your person is Grabbed.\r\n\u2022\tDisadvantage
+    \u2013 You are Grabbed.\r\n\u2022\tFailing \u2013 You are Grabbed. When attempting
+    to escape or attack while grabbed add 1 negative dice.\r\n"
