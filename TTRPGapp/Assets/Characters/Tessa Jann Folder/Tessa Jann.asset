@@ -35,3 +35,4 @@ MonoBehaviour:
 
 '
   characterImage: {fileID: 21300000, guid: 2e47e620e4a4b9941a48ff61de6a3d57, type: 3}
+  weapon: {fileID: 11400000, guid: 5440b890df447844388d708e9d913a16, type: 2}

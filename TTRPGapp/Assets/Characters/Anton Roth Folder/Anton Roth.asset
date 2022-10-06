@@ -33,3 +33,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 63cf0ed8088d1dc41ba6cc06eafe80a8, type: 2}
   characterDes: Intimidating savant with a mean streak
   characterImage: {fileID: 21300000, guid: 52caaedf96add0d4e9f6d278170e0ec6, type: 3}
+  weapon: {fileID: 11400000, guid: 6f3bb50e1b887b148b66a0b6e4d3b051, type: 2}

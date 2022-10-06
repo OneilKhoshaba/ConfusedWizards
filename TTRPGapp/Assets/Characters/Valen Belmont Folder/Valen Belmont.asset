@@ -33,3 +33,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fa6220c034b9be442813d6768203660a, type: 2}
   characterDes: Vain manipulator who is cold and calculating
   characterImage: {fileID: 21300000, guid: 4a7e0cc99cc90ea4db16d98e6a79f728, type: 3}
+  weapon: {fileID: 11400000, guid: ce0424203e08b4c4894d5c8766f7e7f3, type: 2}

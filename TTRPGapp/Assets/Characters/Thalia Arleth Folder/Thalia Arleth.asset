@@ -33,3 +33,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 49c19576226b16c46b76761ddfa25078, type: 2}
   characterDes: 'Generous pitfighter who protects their friends '
   characterImage: {fileID: 21300000, guid: 5090e32fbbcee64499f833b29d9c8d0d, type: 3}
+  weapon: {fileID: 11400000, guid: acf925e684fe1254088f9e9a87511d93, type: 2}

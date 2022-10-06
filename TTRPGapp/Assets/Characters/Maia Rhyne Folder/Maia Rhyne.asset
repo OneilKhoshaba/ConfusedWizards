@@ -33,3 +33,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e67367cae1518be40b5c2be4d1681337, type: 2}
   characterDes: Extroverted inventor who is quick to trust others.
   characterImage: {fileID: 21300000, guid: 75b4d76b08f8ec849925ba56011b3b3b, type: 3}
+  weapon: {fileID: 11400000, guid: 708ceefd50af1ff4b95de9274398d225, type: 2}
