@@ -20,4 +20,6 @@ public class PlayerUD : ScriptableObject
     public PlayerAbility usedAbility;
     public CharacterData characterData;
 
+    public int playerHealth = 5;
+
 }

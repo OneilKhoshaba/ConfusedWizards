@@ -20,8 +20,9 @@ MonoBehaviour:
   Mental: 0
   Social: 0
   Awarness: 0
-  plotArmour: 0
-  effort: 0
+  plotArmour: 1
+  effort: 3
+  effortCurrent: 0
   sheildMax: 50
   sheildCurrent: 20
   combatAbilities:
@@ -32,3 +33,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9af73366cc98fa442bcf43418928b67d, type: 2}
   characterDes: 
   characterImage: {fileID: 0}
+  weapon: {fileID: 11400000, guid: 481b3d6f5675edf49b5b39ea322e7280, type: 2}

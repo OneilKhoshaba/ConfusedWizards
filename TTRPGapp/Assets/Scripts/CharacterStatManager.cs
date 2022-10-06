@@ -5,9 +5,10 @@ using TMPro;
 
 public class CharacterStatManager : MonoBehaviour
 {
+    public PlayerUD PlayerUD;
     public CharacterData characterData;
     public TMP_Text shieldText;
-    public TMP_Text charName;
+    public TMP_Text capCounter;
     public GameObject effort1;
     public GameObject effort2;
     public GameObject effort3;
@@ -25,7 +26,8 @@ public class CharacterStatManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        charName.text = "" + characterData.name;
+        characterData = PlayerUD.characterData;
+        //charName.text = "" + characterData.name;
     }
 
     // Update is called once per frame
@@ -37,7 +39,57 @@ public class CharacterStatManager : MonoBehaviour
         {
             plotArmour.SetActive(false);
         }
+        if (characterData.plotArmour == true)
+        {
+            plotArmour.SetActive(true);
+        }
         seteffort();
+        setHealthTracker();
+        capCounter.text = "CAP: " + PlayerUD.capCounter;
+    }
+
+    public void setHealthTracker()
+    {
+        if (PlayerUD.playerHealth == 1)
+        {
+            healthy.SetActive(true);
+            Hurt.SetActive(true);
+            wounded.SetActive(true);
+            injured.SetActive(true);
+            downed.SetActive(false);
+        }
+        if (PlayerUD.playerHealth == 2)
+        {
+            healthy.SetActive(true);
+            Hurt.SetActive(true);
+            wounded.SetActive(true);
+            injured.SetActive(false);
+            downed.SetActive(true);
+        }
+        if (PlayerUD.playerHealth == 3)
+        {
+            healthy.SetActive(true);
+            Hurt.SetActive(true);
+            wounded.SetActive(false);
+            injured.SetActive(true);
+            downed.SetActive(true);
+        }
+        if (PlayerUD.playerHealth == 4)
+        {
+            healthy.SetActive(true);
+            Hurt.SetActive(false);
+            wounded.SetActive(true);
+            injured.SetActive(true);
+            downed.SetActive(true);
+        }
+        if (PlayerUD.playerHealth == 5)
+        {
+            healthy.SetActive(false);
+            Hurt.SetActive(true);
+            wounded.SetActive(true);
+            injured.SetActive(true);
+            downed.SetActive(true);
+        }
     }
 
     public void seteffort()

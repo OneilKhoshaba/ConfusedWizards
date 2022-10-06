@@ -24,3 +24,4 @@ MonoBehaviour:
   capCounter: 0
   usedAbility: {fileID: 11400000, guid: 9a2442e014e98764bab0984a64948cc0, type: 2}
   characterData: {fileID: 11400000, guid: 6ad8eb47c01e17242bd6fc9a8019d1bf, type: 2}
+  playerHealth: 5
