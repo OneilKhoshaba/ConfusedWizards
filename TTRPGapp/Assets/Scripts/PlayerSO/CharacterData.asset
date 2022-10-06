@@ -22,7 +22,8 @@ MonoBehaviour:
   Awarness: 0
   plotArmour: 0
   effort: 0
-  sheild: 0
+  sheildMax: 50
+  sheildCurrent: 20
   combatAbilities:
   - {fileID: 11400000, guid: b516f9ee5ecb9df47b7d0ebf9b3ecf68, type: 2}
   - {fileID: 11400000, guid: d49967d8fc6f1ee49bfe2d36875b825b, type: 2}
@@ -30,3 +31,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: c194202e2f2332d4dbeee1da09a9e616, type: 2}
   - {fileID: 11400000, guid: 9af73366cc98fa442bcf43418928b67d, type: 2}
   characterDes: 
+  characterImage: {fileID: 0}

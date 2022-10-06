@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1d225695f092b884abff8f6938e564af, type: 3}
-  m_Name: socal1
+  m_Name: Exert Combat
   m_EditorClassIdentifier: 
-  abilityName: blarg
+  abilityName: 
   abilityDes: 
-  costCap: 0
+  costCap: 1
   costEffort: 0
-  costAmount: 0
+  costAmount: 1
   addPosDice: 0
   addSuccess: 0
   removeNegDice: 0

@@ -35,6 +35,7 @@ public class RollManager : MonoBehaviour
     public GameObject setRollValues;
     public GameObject diceRoller;
     public PlayerAbility usedAbility;
+    public GameEvent claerDice;
 
     private void Awake()
     {
@@ -45,10 +46,10 @@ public class RollManager : MonoBehaviour
         //    addPosDice();
         //}
 
-        //for (int j = 0; j < 5; j++)
-        //{
-        //    Instantiate(neutDice, neutDiceSpawn.transform);
-        //}
+        for (int j = 0; j < 5; j++)
+        {
+            Instantiate(neutDice, neutDiceSpawn.transform);
+        }
     }
 
     // Update is called once per frame
@@ -132,7 +133,11 @@ public class RollManager : MonoBehaviour
 
     public void clearDicePool()
     {
-        //PlayerUD
+        claerDice.Invoke();
+    }
+    public void endTurn()
+    {
+        playerUD.capCounter = 0;
     }
 
     public void setDiceRes()
@@ -158,7 +163,7 @@ public class RollManager : MonoBehaviour
 
         addCapDice();
         spwanDiceFromPool();
-        setRollValues.SetActive(false);
+        //setRollValues.SetActive(false);
         diceRoller.SetActive(true);
         rollEvent?.Invoke();
         addCap();

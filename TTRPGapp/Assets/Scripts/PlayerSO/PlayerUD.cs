@@ -18,5 +18,6 @@ public class PlayerUD : ScriptableObject
     public bool firstRoll = true;
     public int capCounter;
     public PlayerAbility usedAbility;
+    public CharacterData characterData;
 
 }

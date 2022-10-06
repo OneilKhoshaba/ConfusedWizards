@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 1017985829136942539}
   - component: {fileID: 1017985829136942538}
   - component: {fileID: -213230346017108484}
+  - component: {fileID: -5306571660035970676}
   m_Layer: 5
   m_Name: Neut Dice
   m_TagString: Untagged
@@ -187,7 +188,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resText: {fileID: 1017985827848898133}
-  diceNum: 0
   pD: {fileID: 11400000, guid: 621f709b3d363dc42837607c06cab49e, type: 2}
   dType: 1
 --- !u!114 &-213230346017108484
@@ -209,6 +209,34 @@ MonoBehaviour:
       - m_Target: {fileID: 1017985829136942538}
         m_TargetAssemblyTypeName: DiceRoller, Assembly-CSharp
         m_MethodName: rollNeutDice
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-5306571660035970676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017985829136942536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05fbed6c9751414e86c3dfba3765fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 5d443c73cbb395f438169d69fd3a035f, type: 2}
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1017985829136942538}
+        m_TargetAssemblyTypeName: DiceRoller, Assembly-CSharp
+        m_MethodName: clearDice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

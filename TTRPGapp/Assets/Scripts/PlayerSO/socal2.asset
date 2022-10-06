@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d225695f092b884abff8f6938e564af, type: 3}
   m_Name: socal2
   m_EditorClassIdentifier: 
-  abilityName: 
+  abilityName: blarg 2
   abilityDes: 
   costCap: 0
   costEffort: 0
@@ -22,3 +22,4 @@ MonoBehaviour:
   removeNegDice: 0
   passive: 0
   effectAmount: 0
+  setAttribute: 0

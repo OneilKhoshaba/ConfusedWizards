@@ -17,7 +17,8 @@ public class CharacterData : ScriptableObject
 
     public bool plotArmour;
     public int effort;
-    public int sheild;
+    public int sheildMax;
+    public int sheildCurrent;
 
     public List<PlayerAbility> combatAbilities;
     public List<PlayerAbility> socialAbilities;

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a76931270c7ee64cbdcea8f05f9a79f, type: 3}
   m_Name: PlayerUD
   m_EditorClassIdentifier: 
-  posDiceAmount: 1
+  posDiceAmount: 0
   neutDiceAmount: 0
   negDiceAmount: 0
   posDiceResult: 0
@@ -22,4 +22,5 @@ MonoBehaviour:
   falloutResult: 0
   firstRoll: 0
   capCounter: 0
-  usedAbility: {fileID: 11400000, guid: b516f9ee5ecb9df47b7d0ebf9b3ecf68, type: 2}
+  usedAbility: {fileID: 11400000, guid: 9a2442e014e98764bab0984a64948cc0, type: 2}
+  characterData: {fileID: 11400000, guid: 6ad8eb47c01e17242bd6fc9a8019d1bf, type: 2}

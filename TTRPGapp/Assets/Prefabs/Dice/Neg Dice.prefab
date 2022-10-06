@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 25960694962017477}
   - component: {fileID: 25960694962017478}
   - component: {fileID: -7597500703005306664}
+  - component: {fileID: -1168594009125451115}
   m_Layer: 5
   m_Name: Neg Dice
   m_TagString: Untagged
@@ -72,6 +73,34 @@ MonoBehaviour:
       - m_Target: {fileID: 25960694962017478}
         m_TargetAssemblyTypeName: DiceRoller, Assembly-CSharp
         m_MethodName: rollNegDiceV2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &-1168594009125451115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 25960694962017476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05fbed6c9751414e86c3dfba3765fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 5d443c73cbb395f438169d69fd3a035f, type: 2}
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 25960694962017478}
+        m_TargetAssemblyTypeName: DiceRoller, Assembly-CSharp
+        m_MethodName: clearDice
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
