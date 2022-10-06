@@ -7,6 +7,7 @@ public class RollManager : MonoBehaviour
 {
 
     public PlayerUD PlayerUD;
+
     [Space(10)]
     public GameObject posDice;
     public GameObject PosDiceSpawn;
@@ -58,7 +59,7 @@ public class RollManager : MonoBehaviour
         usedAbility = playerUD.usedAbility;
         setDiceRes();
         setTrackerRes();
-        negDiceCounter.text = "" + negDiceList.Count;
+        //negDiceCounter.text = "" + negDiceList.Count;
     }
 
     public void addPosDice()
@@ -121,7 +122,7 @@ public class RollManager : MonoBehaviour
 
     public void spwanDiceFromPool()
     {
-        for (int l = 0; l < playerUD.posDiceAmount; l++)
+        for (int l = 0; l < (playerUD.posDiceAmount + playerUD.bonusPosDice); l++)
         {
             addPosDice();
         }
@@ -157,10 +158,10 @@ public class RollManager : MonoBehaviour
 
     public void rollDice()
     {        
-        addAbilityVariables();
+
         perviousListEvent?.Invoke();
         resetDiceRes();
-
+        addAbilityVariables();
         addCapDice();
         spwanDiceFromPool();
         //setRollValues.SetActive(false);

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerUD : ScriptableObject
 {
     public int posDiceAmount;
+    public int bonusPosDice;
     public int neutDiceAmount = 5;
     public int negDiceAmount;
     [Space (10)]
@@ -19,6 +20,7 @@ public class PlayerUD : ScriptableObject
     public int capCounter;
     public PlayerAbility usedAbility;
     public CharacterData characterData;
+    public CharacterData selectedCharacter;
 
     public int playerHealth = 5;
 

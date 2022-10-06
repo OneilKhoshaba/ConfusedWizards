@@ -47,6 +47,11 @@ public class CharacterStatManager : MonoBehaviour
         setHealthTracker();
         capCounter.text = "CAP: " + PlayerUD.capCounter;
     }
+    public void endCombat()
+    {
+        PlayerUD.capCounter = 0;
+        characterData.effortCurrent = characterData.effort;
+    }
 
     public void setHealthTracker()
     {

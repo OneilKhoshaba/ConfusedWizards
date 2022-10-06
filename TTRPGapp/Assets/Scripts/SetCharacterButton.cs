@@ -1,19 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SetCharacterButton : MonoBehaviour
 {
+    public GameObject characterInfoPanel;
+    public GameObject characterInfoPanellocation;
     public CharacterData characterData;
-    // Start is called before the first frame update
-    void Start()
+    public TMP_Text charachterName;
+    public PlayerUD PlayerUD;
+
+    void Awake()
     {
-        
+        charachterName.text = characterData.name;
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void spawnCharacterInfo()
     {
-        
+        PlayerUD.selectedCharacter = characterData;
+        characterInfoPanel.SetActive(true);
     }
 }

@@ -24,8 +24,18 @@ public class DiceTextCounter : MonoBehaviour
         }
         else
         {
-            bonusPosDiceCounter++;
-            counterText.text = "" + bonusPosDiceCounter;
+
+            counterText.text = "" + (bonusPosDiceCounter);
         }
+    }
+    
+    public void addToBonusDiceCount()
+    {
+        bonusPosDiceCounter++;
+    }
+
+    public void subToBonusDiceCount()
+    {
+        bonusPosDiceCounter--;
     }
 }

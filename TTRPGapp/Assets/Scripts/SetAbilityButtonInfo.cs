@@ -50,6 +50,7 @@ public class SetAbilityButtonInfo : MonoBehaviour
     {
         playerUD.usedAbility = ability;
         playerUD.posDiceAmount = 0;
+        playerUD.bonusPosDice = 0;
         playerUD.negDiceAmount = 0;
         diceRollPanle.SetActive(true);
     }
@@ -57,6 +58,7 @@ public class SetAbilityButtonInfo : MonoBehaviour
     {
         playerUD.usedAbility = attack;
         playerUD.posDiceAmount = 0;
+        playerUD.bonusPosDice = 0;
         playerUD.negDiceAmount = 0;
         diceRollPanle.SetActive(true);
     }
@@ -64,6 +66,7 @@ public class SetAbilityButtonInfo : MonoBehaviour
     {
         playerUD.usedAbility = exert;
         playerUD.posDiceAmount = 0;
+        playerUD.bonusPosDice = 0;
         playerUD.negDiceAmount = 0;
         diceRollPanle.SetActive(true);
     }

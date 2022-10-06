@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterSelectManager : MonoBehaviour
 {
     public List<CharacterData> characterList = new List<CharacterData>();
+    public CharacterData characterData;
     public GameObject characterSelector;
     public GameObject characterPanle;
     // Start is called before the first frame update
@@ -21,11 +22,12 @@ public class CharacterSelectManager : MonoBehaviour
 
     public void spawnCharacters()
     {
-        foreach(CharacterData character in characterList)
-        {
-            GameObject newChar = Instantiate(characterSelector, characterPanle.transform);
-            newChar.GetComponents<SetCharacterButton>();
-            //newChar.CharacterData = character;
-        }
+    //    foreach(CharacterData character in characterList)
+    //    {
+    //        characterData = character;
+    //        GameObject newChar = Instantiate(characterSelector, characterPanle.transform);
+    //        newChar.GetComponents<SetCharacterButton>();
+    //        //newChar.CharacterData = character;
+    //    }
     }
 }

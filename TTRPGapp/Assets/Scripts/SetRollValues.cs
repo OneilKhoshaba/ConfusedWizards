@@ -27,12 +27,12 @@ public class SetRollValues : MonoBehaviour
     }
     public void addToPosPool()
     {
-        PlayerUD.posDiceAmount++;
+        PlayerUD.bonusPosDice++;
     }
 
     public void subFromPosPool()
     {
-        PlayerUD.posDiceAmount--;
+        PlayerUD.bonusPosDice--;
     }
 
     public void addToNegPool()
