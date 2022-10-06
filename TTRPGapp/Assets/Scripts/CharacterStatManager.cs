@@ -14,6 +14,12 @@ public class CharacterStatManager : MonoBehaviour
     public GameObject effort4;
     public GameObject effort5;
     public GameObject plotArmour;
+    public GameObject healthy;
+    public GameObject Hurt;
+    public GameObject wounded;
+    public GameObject injured;
+    public GameObject downed;
+    public TMP_Dropdown healthTrackerSelect;
 
 
     // Start is called before the first frame update
@@ -31,7 +37,7 @@ public class CharacterStatManager : MonoBehaviour
         {
             plotArmour.SetActive(false);
         }
-        
+        seteffort();
     }
 
     public void seteffort()
