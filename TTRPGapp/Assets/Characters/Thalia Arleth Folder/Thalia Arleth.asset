@@ -22,7 +22,9 @@ MonoBehaviour:
   Awarness: 0
   plotArmour: 1
   effort: 2
-  sheild: 30
+  effortCurrent: 2
+  sheildMax: 30
+  sheildCurrent: 30
   combatAbilities:
   - {fileID: 11400000, guid: 29508ec6d8df247488d63a42ea4a095c, type: 2}
   - {fileID: 11400000, guid: 97c13d95af8086945ac09c37a4f4d908, type: 2}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 847580f377add2a4990c25c87e09942b, type: 3}
+  m_Name: Zared Holtz
+  m_EditorClassIdentifier: 
+  Brawl: 2
+  Ranged: 0
+  Brawn: 1
+  Finesse: 2
+  Ingenunity: 0
+  Mental: 1
+  Social: 0
+  Awarness: 2
+  plotArmour: 1
+  effort: 2
+  effortCurrent: 2
+  sheildMax: 20
+  sheildCurrent: 20
+  combatAbilities:
+  - {fileID: 11400000, guid: 0b3a9e80874022e4ca524778cee7d52a, type: 2}
+  - {fileID: 11400000, guid: 8315649e53f87c143903ded2441222b7, type: 2}
+  socialAbilities:
+  - {fileID: 11400000, guid: 80d01150c78983b4b9cd89c392fb7a7a, type: 2}
+  - {fileID: 11400000, guid: a9e4ebccc91c2bd49ae558d00663af01, type: 2}
+  characterDes: Quick with a sword, but a terrible liar.
+  characterImage: {fileID: 21300000, guid: 2f470bb66676bd647a8a37c1607e35a0, type: 3}

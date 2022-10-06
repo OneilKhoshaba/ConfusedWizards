@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 847580f377add2a4990c25c87e09942b, type: 3}
-  m_Name: Maia Rhyne
+  m_Name: Tessa Jann
   m_EditorClassIdentifier: 
   Brawl: 0
-  Ranged: 1
-  Brawn: 1
-  Finesse: 0
+  Ranged: 0
+  Brawn: 0
+  Finesse: 2
   Ingenunity: 2
-  Mental: 0
-  Social: 2
+  Mental: 1
+  Social: 1
   Awarness: 2
   plotArmour: 1
   effort: 2
@@ -26,10 +26,12 @@ MonoBehaviour:
   sheildMax: 20
   sheildCurrent: 20
   combatAbilities:
-  - {fileID: 11400000, guid: ef9d72739c24f884085a027ba812dee3, type: 2}
-  - {fileID: 11400000, guid: 7a7436b1e0add0f4f9f785ee55fc7e7f, type: 2}
+  - {fileID: 11400000, guid: cdee92449f15c6f4ca18029c1705b7c3, type: 2}
+  - {fileID: 11400000, guid: cf001319f9a592747a4bb5ffe05d430e, type: 2}
   socialAbilities:
-  - {fileID: 11400000, guid: 3b0fe82fa7ca2774d80e2fbd8f9b674a, type: 2}
-  - {fileID: 11400000, guid: e67367cae1518be40b5c2be4d1681337, type: 2}
-  characterDes: Extroverted inventor who is quick to trust others.
-  characterImage: {fileID: 21300000, guid: 75b4d76b08f8ec849925ba56011b3b3b, type: 3}
+  - {fileID: 11400000, guid: bdbfd7be228a2c0459394f81adaaa500, type: 2}
+  - {fileID: 11400000, guid: cd051ab2ab582be42840235fa713507f, type: 2}
+  characterDes: 'Optimistic mechanic who is a perfectionist.
+
+'
+  characterImage: {fileID: 21300000, guid: 2e47e620e4a4b9941a48ff61de6a3d57, type: 3}
