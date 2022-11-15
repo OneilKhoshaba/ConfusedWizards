@@ -13,7 +13,6 @@ public class SetWeaponStats : MonoBehaviour
     public TMP_Text weaponClass;
     public TMP_Text range;
 
-    // Start is called before the first frame update
     void Awake()
     {
         characterData = PlayerUD.characterData;

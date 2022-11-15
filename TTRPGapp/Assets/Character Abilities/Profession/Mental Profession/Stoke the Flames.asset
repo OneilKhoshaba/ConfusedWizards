@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d225695f092b884abff8f6938e564af, type: 3}
   m_Name: Stoke the Flames
   m_EditorClassIdentifier: 
-  abilityName: 
+  abilityName: Stoke the Flames
   abilityDes: "Choose a target that has an Affliction and is within Mid range. Make
     an Exert roll against the chosen target. If successful, double the value of the
     Affliction and deal damage equal to the new value to the chosen enemy.\r"

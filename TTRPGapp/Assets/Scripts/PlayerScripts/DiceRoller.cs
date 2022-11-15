@@ -43,7 +43,7 @@ public class DiceRoller : MonoBehaviour
         if (diceRis == 1 || diceRis == 2)
         {
             pD.negDiceResult++;
-            pD.totalDiceResult++;
+            pD.totalDiceResult--;
             resText.text = "-1";
         }
         if (diceRis == 3 || diceRis == 4)

@@ -18,6 +18,7 @@ public class SetRollValues : MonoBehaviour
 
     public void Awake()
     {
+        characterData = PlayerUD.characterData;
         ability = PlayerUD.usedAbility;
     }
 

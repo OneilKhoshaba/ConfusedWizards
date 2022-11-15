@@ -19,7 +19,7 @@ public class PlayerAbility : ScriptableObject
     public bool removeNegDice;
     public bool passive;//passive adds nothing to a roll but dose somthing else
     public int effectAmount;
-    public enum AttributeList { brwal, ranged, brawn, finesse, ingenunity, mental, social, awarness}
+    public enum AttributeList { brwal, ranged, brawn, finesse, ingenunity, mental, social, awarness, Any}
     public AttributeList setAttribute;
 
     //public enum Cost { effort, cap}

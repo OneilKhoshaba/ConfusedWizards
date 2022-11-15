@@ -15,6 +15,8 @@ public class SetAbilityButtonInfo : MonoBehaviour
     public int abilityNumber;
     public bool combatSkill;
     public bool generalSkill;
+    //enum skilltype { general, combat, social, drone, unique}
+    //skilltype skill;
     public GameObject diceRollPanle;
 
     // Start is called before the first frame update
@@ -23,21 +25,32 @@ public class SetAbilityButtonInfo : MonoBehaviour
         characterData = playerUD.characterData;
         if(generalSkill == false)
         {
-        if(combatSkill == true)
-        {
-            ability = characterData.combatAbilities[abilityNumber];
-        }
-        if(combatSkill == false)
-        {
-            ability = characterData.socialAbilities[abilityNumber];
-        }
-        text.text = ability.abilityName;
+            if(combatSkill == true)
+            {
+                ability = characterData.combatAbilities[abilityNumber];
+            }
+            if(combatSkill == false)
+            {
+                ability = characterData.socialAbilities[abilityNumber];
+            }
+            text.text = ability.abilityName;
         }
         else
         {
             return;
         }
 
+        //switch ( skill)
+        //{
+        //    case skilltype.general:
+        //        return;
+        //    case skilltype.combat:
+        //        ability = characterData.combatAbilities[abilityNumber];
+        //        break;
+        //    case skilltype.social:
+        //        ability = characterData.socialAbilities[abilityNumber];
+        //        break;
+        //}
     }
 
     // Update is called once per frame

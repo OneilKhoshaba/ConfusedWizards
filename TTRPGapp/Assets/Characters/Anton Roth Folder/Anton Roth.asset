@@ -20,8 +20,8 @@ MonoBehaviour:
   Mental: 2
   Social: 1
   Awarness: 1
-  plotArmour: 1
-  effort: 2
+  plotArmour: 0
+  effort: 1
   effortCurrent: 2
   sheildMax: 30
   sheildCurrent: 30

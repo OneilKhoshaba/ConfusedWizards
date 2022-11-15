@@ -18,7 +18,8 @@ MonoBehaviour:
   costEffort: 0
   costAmount: 0
   addPosDice: 0
-  addSuccess: 0
+  addSuccess: 1
   removeNegDice: 0
   passive: 0
-  effectAmount: 0
+  effectAmount: 1
+  setAttribute: 0

@@ -7,7 +7,7 @@ public class RollManager : MonoBehaviour
 {
 
     public PlayerUD PlayerUD;
-
+    public CharacterData characterData;
     [Space(10)]
     public GameObject posDice;
     public GameObject PosDiceSpawn;
@@ -37,10 +37,15 @@ public class RollManager : MonoBehaviour
     public GameObject diceRoller;
     public PlayerAbility usedAbility;
     public GameEvent claerDice;
+    public TMP_Text usedDroneText;
+    public TMP_Dropdown abilityDropdown;
 
     private void Awake()
     {
         resetDiceRes();
+        characterData = playerUD.characterData;
+        usedAbility = playerUD.usedAbility;
+
 
         //for (int i = 0; i < PlayerUD.posDiceAmount; i++)
         //{
@@ -59,6 +64,16 @@ public class RollManager : MonoBehaviour
         usedAbility = playerUD.usedAbility;
         setDiceRes();
         setTrackerRes();
+        if (usedAbility.name == "Drone Friend")
+        {
+            usedDroneText.gameObject.SetActive(true);
+            abilityDropdown.gameObject.SetActive(false);
+        }
+        else
+        {
+            usedDroneText.gameObject.SetActive(false);
+            abilityDropdown.gameObject.SetActive(true);
+        }
         //negDiceCounter.text = "" + negDiceList.Count;
     }
 
@@ -100,32 +115,46 @@ public class RollManager : MonoBehaviour
         {
             playerUD.capCounter += usedAbility.costAmount;
         }
+        if (usedAbility.costEffort == true)
+        {
+            characterData.effort--;
+        }
     }
 
     public void addAbilityVariables()
     {
 
-        playerUD.posDiceAmount += usedAbility.effectAmount;
-        //if (usedAbility.addPosDice == true)
-        //{
-        //    playerUD.posDiceAmount += usedAbility.effectAmount;
-        //}
-        //if (usedAbility.addSuccess == true)
-        //{
-        //    playerUD.posDiceResult += usedAbility.effectAmount;
-        //}
-        //if (usedAbility.removeNegDice == true)
-        //{
-        //    playerUD.negDiceAmount -= usedAbility.effectAmount;
-        //}
+        //playerUD.posDiceAmount += usedAbility.effectAmount;
+        if (usedAbility.addPosDice == true)
+        {
+            playerUD.posDiceAmount += usedAbility.effectAmount;
+        }
+        if (usedAbility.addSuccess == true)
+        {
+            playerUD.posDiceResult += usedAbility.effectAmount;
+        }
+        if (usedAbility.removeNegDice == true)
+        {
+            playerUD.negDiceAmount -= usedAbility.effectAmount;
+        }
     }
 
     public void spwanDiceFromPool()
     {
-        for (int l = 0; l < (playerUD.posDiceAmount + playerUD.bonusPosDice); l++)
+        if(usedAbility.name == "Drone Friend")
         {
             addPosDice();
+            addPosDice();
+            Debug.Log("Drone Friend used");
         }
+        else
+        {
+            for (int l = 0; l < (playerUD.posDiceAmount + playerUD.bonusPosDice); l++)
+            {
+                addPosDice();
+            }
+        }
+
         for (int p = 0; p < playerUD.negDiceAmount; p++)
         {
             addNegDice();
@@ -156,6 +185,19 @@ public class RollManager : MonoBehaviour
         playerUD.totalDiceResult = 0;
     }
 
+    public void settotalRes()
+    {
+        playerUD.totalDiceResult = playerUD.posDiceResult - playerUD.negDiceResult;
+        
+    }
+
+    public void usePlotArmour()
+    {
+        characterData.plotArmour = false;
+        playerUD.totalDiceResult += 4;
+    }
+
+
     public void rollDice()
     {        
 
@@ -167,6 +209,7 @@ public class RollManager : MonoBehaviour
         //setRollValues.SetActive(false);
         diceRoller.SetActive(true);
         rollEvent?.Invoke();
+        settotalRes();
         addCap();
         playerUD.firstRoll = false;
     }

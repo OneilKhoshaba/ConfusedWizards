@@ -15,10 +15,11 @@ MonoBehaviour:
   abilityName: cleave
   abilityDes: 
   costCap: 0
-  costEffort: 0
-  costAmount: 0
+  costEffort: 1
+  costAmount: 1
   addPosDice: 1
   addSuccess: 0
   removeNegDice: 0
   passive: 0
   effectAmount: 1
+  setAttribute: 0
