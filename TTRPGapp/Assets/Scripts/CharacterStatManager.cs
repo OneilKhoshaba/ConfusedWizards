@@ -33,7 +33,7 @@ public class CharacterStatManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        shieldText.text = "Shields " + characterData.sheildCurrent +"/" + characterData.sheildCurrent;
+        shieldText.text = "Close Calls  " + characterData.sheildCurrent +"/" + characterData.sheildCurrent;
 
         if (characterData.plotArmour == false)
         {

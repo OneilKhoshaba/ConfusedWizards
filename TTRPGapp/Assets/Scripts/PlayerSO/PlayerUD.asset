@@ -12,18 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a76931270c7ee64cbdcea8f05f9a79f, type: 3}
   m_Name: PlayerUD
   m_EditorClassIdentifier: 
-  posDiceAmount: 0
-  bonusPosDice: 0
-  neutDiceAmount: 0
-  negDiceAmount: 0
-  posDiceResult: 0
+  posDiceAmount: 2
+  bonusPosDice: 1
+  neutDiceAmount: 5
+  negDiceAmount: 2
+  posDiceResult: 6
   neutDiceResult: 0
-  negDiceResult: 0
+  negDiceResult: 6
   totalDiceResult: 0
   falloutResult: 0
   firstRoll: 0
-  capCounter: 0
-  usedAbility: {fileID: 11400000, guid: 7a7436b1e0add0f4f9f785ee55fc7e7f, type: 2}
+  capCounter: 2
+  usedAbility: {fileID: 11400000, guid: 9a2442e014e98764bab0984a64948cc0, type: 2}
   characterData: {fileID: 11400000, guid: 73c77784cfee0cb49ac263ad87f2c00b, type: 2}
   selectedCharacter: {fileID: 11400000, guid: 73c77784cfee0cb49ac263ad87f2c00b, type: 2}
   playerHealth: 5

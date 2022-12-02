@@ -52,10 +52,10 @@ public class RollManager : MonoBehaviour
         //    addPosDice();
         //}
 
-        for (int j = 0; j < 5; j++)
-        {
-            Instantiate(neutDice, neutDiceSpawn.transform);
-        }
+        //for (int j = 0; j < 5; j++)
+        //{
+        //    Instantiate(neutDice, neutDiceSpawn.transform);
+        //}
     }
 
     // Update is called once per frame
@@ -158,6 +158,10 @@ public class RollManager : MonoBehaviour
         for (int p = 0; p < playerUD.negDiceAmount; p++)
         {
             addNegDice();
+        }
+        for (int j = 0; j < 5; j++)
+        {
+            Instantiate(neutDice, neutDiceSpawn.transform);
         }
     }
 
